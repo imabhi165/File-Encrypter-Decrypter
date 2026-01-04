@@ -17,7 +17,7 @@ struct Task
 {
     /* data */
     std::string filePath;
-    std::string f_stream;
+    std::fstream f_stream;
     Action action;
 
     Task(std::fstream &&stream, Action act, std::string filePath) : f_stream(stream), action(act), filePath(filePath);
@@ -53,8 +53,8 @@ struct Task
             throw std::runtime_error("Invalid Task data Format");
         }
     }
-}
-}
+};
+
 ;
 
 #endif
