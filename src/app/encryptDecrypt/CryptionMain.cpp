@@ -1,5 +1,5 @@
 #include <iostream>
-#include "cryption.hpp"
+#include "Cryption.hpp"
 
 int main(int argc, char *argv[])
 {

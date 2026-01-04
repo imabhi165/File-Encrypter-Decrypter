@@ -1,4 +1,5 @@
 #include "ProcessManagement.hpp"
+#include "../encryptDecrypt/Cryption.hpp"
 #include <iostream>
 #include <cstring>
 
@@ -28,3 +29,4 @@ void ProcessManagement::executeTasks()
         std::cout << "Executing Task: " << taskToExecute->toString() << std::endl;
         executeCryption(taskToExecute->toString());
     }
+}

@@ -20,7 +20,7 @@ struct Task
     std::fstream f_stream;
     Action action;
 
-    Task(std::fstream &&stream, Action act, std::string filePath) : f_stream(stream), action(act), filePath(filePath);
+    Task(std::fstream &&stream, Action act, std::string filePath) : filePath(filePath), f_stream(std::move(stream)), action(act) {}
 
     std::string toString()
     {

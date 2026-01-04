@@ -1,6 +1,6 @@
 #include "Cryption.hpp"
-#include <../processes/Task.hpp>
-#include <../fileHandling/ReadEnv.cpp>
+#include "../processes/Task.hpp"
+#include "../fileHandling/ReadEnv.cpp"
 
 int executeCryption(const std::string &taskData)
 {
@@ -31,4 +31,5 @@ int executeCryption(const std::string &taskData)
         }
         task.f_stream.close();
     }
+    return 0;
 }

@@ -14,6 +14,6 @@ public:
 
 private:
     std::fstream file_stream;
-}
+};
 
 #endif // IO_HPP
